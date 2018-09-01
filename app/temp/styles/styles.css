@@ -1,0 +1,21 @@
+
+
+/* Add only variables */
+
+/* Add only additional mixins */
+
+/* Add only global changes */
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
