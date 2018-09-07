@@ -2,5 +2,9 @@
 
 /* Add only variables */
 
-$mainBlue: #2f5572;
-$mainOrange: #d59541;
+/*  Font-Size */
+$base_font_size: 1em;
+
+/*  Line-Height */
+$base_line_height: 1.5;
+$header_line_height: 1.25;
