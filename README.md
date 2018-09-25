@@ -52,8 +52,18 @@ Node.js from Node.js website. For npm packages.
 
 A step by step series of examples that tell you how to get a development env running
 
-Open command prompt in project root folder and type:
+1.In the project you want to use this template download this template.
 
+2.Because this is a template for projects and not the actual project you need to manually copy all dependacies and dev dependacies and put it into your own project packgage json.
+
+3.To create your own project json in command prompt type:
+
+```
+npm init
+```
+4.After that paste all the dependacies into json file after directories.
+
+5.Open command prompt in project root folder and type:
 ```
 npm install
 ```
