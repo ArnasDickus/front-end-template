@@ -2,6 +2,12 @@
 
 Front-end-template, for starting a project without library or framework.
 
+### Current issues:
+```
+Html index  are not compressed in gulp build
+Comments are not deleted from gulp build
+```
+
 ## Why should I use this template.
   
  ### Professional folder structure:
@@ -71,6 +77,16 @@ To deploy server for editing with gulp enabled:
 ```
 gulp watch
 ```
+## Testing
+### Updating versions
+```
+1.Create new branch
+2.Add ^ to all package.json files.
+3.Write npm install in command prompt or gitbash
+4.Check what was updated.
+5.Test the item that was updated.
+```
+
 ## Icons
 
 IMPORTANT all svg files must be placed in app\assets\images\icons folder.
