@@ -1,0 +1,8 @@
+/* This file is for testing purposes only and can safely be deleted */
+
+
+.testing{
+    &--lazyload{
+      padding-bottom: 500px;
+    }
+}
