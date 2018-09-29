@@ -18,20 +18,112 @@
 
 </head>
 <body>
-  <h1>Front end Template</h1>
-  <p>This is global work</p>
-  <p>If sprites are working this icon should appear</p>
 
-  <p>If jquerry is working this should be hidden </p>
-  <button id = "jquerry-hide">Hide above with jquerry</button>
-
-  <div class="testing testing--lazyload">
-    Padding to test lazysizes
-  </div>
-  <img class = "lazyload" data-srcset="assets/images/testimonial-cat.jpg" alt="Something went wrong">
-  <img class = "lazyload" data-srcset="assets/images/testimonial-jane-hi-dpi.jpg" alt="Something went wrong">
-  <img class = "lazyload" data-srcset="assets/images/testimonial-john.jpg" alt="Something went wrong">
-
+  <h1 class = "testing__main-title">Front end Template</h1>
+  <div class="container">
+    <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Dependacy Name</th>
+                    <th>Usage</th>
+                    <th>Last Version Update</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#@babel/core">@Babel/core</a></td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><a href="#@babel/preset-env"> @babel/preset-env</a></td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>babel-loader</td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Bootstrap</td>
+                    <td>Framework-library</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>babel-loader</td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>babel-loader</td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>babel-loader</td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>babel-loader</td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>babel-loader</td>
+                    <td>Allows to write modern javascript</td>
+                    <td>09-29-2018</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id = "@babel/core" class="testing__title">
+         What is @babel/core?
+        </div>
+        <table class="table table-striped ">
+          <thead>
+              <tr class = "row">
+                  <th class = "col-md-4">What is @babel/core?</th>
+                  <th class = "col-md-4">Why should I use it?</th>
+                  <th class = "col-md-4">Links</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class = "row">
+                  <td class = "col-md-4">Babel is a toolchain that is mainly used to convert
+                   ECMAScript 2015+ code into a backwards compatible
+                   version of JavaScript in current and older browsers
+                   or environments.
+                 </td>
+                  <td class = "col-md-4">Allows to write modern javascript
+                    without worrying about browser support.</td>
+                  <td class = "col-md-4">
+                    <a href="https://babeljs.io/docs/en/" target = "_blank">Babel docs</a>
+                    <br>
+                    <a href="https://www.npmjs.com/package/@babel/core/v/7.0.0-beta.5" target = "_blank">Npm package</a>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+        <div class="testing__secondary-title">
+          Testing @babel/core
+        </div>
+        <ol>
+          <li>Launch gulp watch in gitbash or command prompt</li>
+          <li>Modify app/assets/scripts/modules/testing.js file</li>
+          <li>Save</li>
+          <li>See if there is any changes</li>
+        </ol>
 
   <!-- build:js assets/scripts/App.js -->
   <script src="/temp/scripts/App.js"></script>
