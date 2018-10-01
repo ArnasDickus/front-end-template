@@ -6,8 +6,15 @@ rev = require('gulp-rev'),
 cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create(),
-strip = require('gulp-strip-comments');
+strip = require('gulp-strip-comments'),
+htmlmin = require('gulp-htmlmin');
 
+
+gulp.task('minify', function(){
+  return gulp.src('app/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('docs'));
+});
 
 // delete comments
 gulp.task('delete-comments', function(){
@@ -69,8 +76,10 @@ gulp.task('optimizeImages',['deleteDistFolder',], function(){
     gulp.start("usemin");
   });
 
-gulp.task('usemin', ['styles', 'scripts',], function(){
+gulp.task('usemin', ['styles', 'scripts','delete-comments'], function(){
   return gulp.src("./app/index.html")
+
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(usemin({
       css: [function() {return rev()}, function() {return cssnano()}],
       js: [function() {return rev()}, function() {return uglify()}]
@@ -79,4 +88,4 @@ gulp.task('usemin', ['styles', 'scripts',], function(){
 });
 
 
-gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles','optimizeImages', 'useminTrigger','delete-comments',]);
+gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles','optimizeImages', 'useminTrigger',]);
