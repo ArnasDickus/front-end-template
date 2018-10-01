@@ -2,8 +2,6 @@
 import $ from "jquery";
 
 
-
-
 class Testing {
   constructor(){
     this.test();
