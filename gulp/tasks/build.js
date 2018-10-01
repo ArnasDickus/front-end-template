@@ -5,9 +5,20 @@ usemin = require('gulp-usemin'),
 rev = require('gulp-rev'),
 cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+strip = require('gulp-strip-comments');
 
 
+// delete comments
+gulp.task('delete-comments', function(){
+  let filesToDeleteComments = [
+    'docs/index.html',
+
+  ]
+  return gulp.src(filesToDeleteComments)
+  .pipe(strip())
+  .pipe(gulp.dest('docs'));
+});
 
 // Preview Distribution folder files.
 gulp.task('previewDist', function(){
@@ -54,11 +65,11 @@ gulp.task('optimizeImages',['deleteDistFolder',], function(){
     .pipe(gulp.dest('./docs/assets/images'));
 });
 // TODO gulp usemin is depreacated need to use browserify or webpack
-  gulp.task('useminTrigger' , ['deleteDistFolder'], function(){
+  gulp.task('useminTrigger' , ['deleteDistFolder',], function(){
     gulp.start("usemin");
   });
 
-gulp.task('usemin', ['styles', 'scripts'], function(){
+gulp.task('usemin', ['styles', 'scripts',], function(){
   return gulp.src("./app/index.html")
     .pipe(usemin({
       css: [function() {return rev()}, function() {return cssnano()}],
@@ -68,4 +79,4 @@ gulp.task('usemin', ['styles', 'scripts'], function(){
 });
 
 
-gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles','optimizeImages', 'useminTrigger']);
+gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles','optimizeImages', 'useminTrigger','delete-comments',]);
