@@ -59,8 +59,9 @@
                 </tr>
                 <tr>
                     <th scope="row">5</th>
-                    <td>babel-loader</td>
-                    <td>Allows to write modern javascript</td>
+                    <td><a href="#lazysizes"> lazysizes</td></a>
+                    <td>Stops websites from downloading all images in your websites
+                    at once.</td>
                     <td>09-29-2018</td>
                 </tr>
                 <tr>
@@ -275,8 +276,45 @@
   <!-- Check popover -->
   <a  data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Click if popover working</a>
 
+  <!-- lazysizes -->
+  <div id = "lazysizes" class="testing__title">
+   What is lazysizes?
+  </div>
+  <table class="table table-striped ">
+    <thead>
+        <tr class = "row">
+            <th class = "col-md-4">What is lazysizes?</th>
+            <th class = "col-md-4">Why should I use it?</th>
+            <th class = "col-md-4">Links</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class = "row">
+            <td class = "col-md-4">lazysizes is a fast (jank-free), SEO-friendly
+            and self-initializing lazyloader for images (including responsive images
+           </td>
+            <td class = "col-md-4">faster startup, saves users data-plans </td>
+            <td class = "col-md-4">
+              <a href="https://www.npmjs.com/package/lazysizes" target = "_blank">lazysizes NPM</a>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+  <div class="testing__secondary-title">
+    Testing lazysizes
+  </div>
+  <ol>
+    <li>Launch gulp watch in gitbash or command prompt</li>
+    <li>Right click Inspect element </li>
+    <li>Open <strong>network</strong> section </li>
+    <li>Scroll to top of a website</li>
+    <li>Click refresh</li>
+    <li>Scroll down and see if images in this section were downloaded.</li>
+  </ol>
+  <img class = "lazyload" data-srcset="assets/images/testimonial-cat.jpg" alt="Lazyloading-not-working">
 
 </div>
+
 
 
 
