@@ -102,6 +102,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var picturefill__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(picturefill__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lazysizes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
 /* harmony import */ var lazysizes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lazysizes__WEBPACK_IMPORTED_MODULE_2__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'popper'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 
 

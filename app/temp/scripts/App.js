@@ -16977,6 +16977,8 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -16984,6 +16986,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 // This is file is for testing application only. You can safely delete it.
+
+
 var Testing =
 /*#__PURE__*/
 function () {
@@ -16991,12 +16995,29 @@ function () {
     _classCallCheck(this, Testing);
 
     this.test();
+    this.jq_test();
+    this.popper();
   }
 
   _createClass(Testing, [{
     key: "test",
     value: function test() {
       console.log("Test success");
+    }
+  }, {
+    key: "jq_test",
+    value: function jq_test() {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#hide").click(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#jq_Content").hide();
+      });
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#show").click(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#jq_Content").show();
+      });
+    }
+  }, {
+    key: "popper",
+    value: function popper() {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('[data-toggle="popover"]').popover();
     }
   }]);
 
