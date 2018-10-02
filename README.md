@@ -2,12 +2,6 @@
 
 Front-end-template, for starting a project without library or framework.
 
-### Current issues:
-```
-Html index  are not compressed in gulp build
-Comments are not deleted from gulp build
-```
-
 ## Why should I use this template.
   
  ### Professional folder structure:
