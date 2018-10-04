@@ -20,6 +20,8 @@ gulp.task('minify', function(){
 gulp.task('delete-comments', function(){
   let filesToDeleteComments = [
     'docs/index.html',
+    'docs/scripts/**',
+    'docs/styles/**',
 
   ]
   return gulp.src(filesToDeleteComments)
@@ -76,7 +78,7 @@ gulp.task('optimizeImages',['deleteDistFolder',], function(){
     gulp.start("usemin");
   });
 
-gulp.task('usemin', ['styles', 'scripts','delete-comments'], function(){
+gulp.task('usemin', ['styles', 'scripts'], function(){
   return gulp.src("./app/index.html")
 
     .pipe(htmlmin({ collapseWhitespace: true }))

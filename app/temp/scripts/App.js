@@ -99,7 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var testing = new _modules_testing_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
+var testing = new _modules_testing_js__WEBPACK_IMPORTED_MODULE_2__["default"](); // Testing-comments
 
 /***/ }),
 /* 1 */
