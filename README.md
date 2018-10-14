@@ -67,6 +67,11 @@ npm init
 ```
 npm install
 ```
+6. Install gulp globally
+```
+npm install --global gulp-cli
+```
+
 To deploy server for editing with gulp enabled:
 ```
 gulp watch
