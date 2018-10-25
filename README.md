@@ -2,6 +2,8 @@
 
 Front-end-template, for starting a project without library or framework.
 
+Live Version [front-end-template](https://arnasdickus.github.io/front-end-template/)
+The template has a few features to test after updating.
 ## Why should I use this template.
   
  ### Professional folder structure:
