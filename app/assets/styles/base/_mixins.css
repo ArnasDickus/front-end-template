@@ -31,3 +31,11 @@
     @mixin-content;
   }
 }
+/* mixin clearfix apply to floated elements. */
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
